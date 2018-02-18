@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+		function ValidaForm(){
+			
+			return true;
+		}
+	</script>
+	<meta charset="UTF-8">
+	<title>Formulários</title>
+</head>
+<body>
+	<form method="POST" action="?action=save" name= "meuForm">
+		Nome: <input type="text" name="nome">
+	<br>Idade: <input type="text" name="idade">
+	<br>E-mail:<input type="text" name="email">
+	<br>sexo <input type="radio" name="sexo" value="M">Masculino
+			 <input type="radio" name="sexo" value="F">Feminino
+
+	<br> Curso: <select name="Campo_curso">
+		<option selected>Selecione o seu curso </option>
+		<option>Ciência da computação</option>
+		<option>Bacharelado em Informatica</option>
+		<option>Emgenharia da computação </option>
+	</select>
+
+	<br>Conhecimentos: 
+		<input type="checkbox" name=conhecimentos[] value="word"> Microsoft Word
+		<input type="checkbox" name=conhecimentos[] value="html"> HTML
+		<input type="checkbox" name=conhecimentos[] value="js"> JavaScript
+		<input type="checkbox" name=conhecimentos[] value="php">PHP
+		<br> <input type="reset" value="limpar">
+		<input type=button onClick= "validaForm" value="enviar"> 
+	</form>
+	
+</body>
+</html>
